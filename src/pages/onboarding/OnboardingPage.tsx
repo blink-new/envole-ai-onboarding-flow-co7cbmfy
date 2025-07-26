@@ -6,6 +6,7 @@ import Step2 from './Step2';
 import Step3 from './Step3';
 import Step4 from './Step4';
 import Step5 from './Step5';
+import Step6 from './Step6';
 
 const OnboardingPage: React.FC = () => {
   const [step, setStep] = useState(1);
@@ -21,7 +22,7 @@ const OnboardingPage: React.FC = () => {
         {step === 3 && <Step3 nextStep={nextStep} prevStep={prevStep} />}
         {step === 4 && <Step4 nextStep={nextStep} prevStep={prevStep} />}
         {step === 5 && <Step5 nextStep={nextStep} prevStep={prevStep} />}
-        {/* Other steps will be added here */}
+        {step === 6 && <Step6 nextStep={nextStep} prevStep={prevStep} />}
       </div>
     </OnboardingLayout>
   );
