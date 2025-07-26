@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 29% 94%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 192 92% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 198 89% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 63%;
+    --accent: 28 95% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 14% 83%;
+    --input: 210 14% 83%;
+    --ring: 192 92% 38%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Define dark mode colors if needed */
+    --background: 0 0% 13%;
+    --foreground: 48 29% 94%;
+    --card: 0 0% 10%;
+    --card-foreground: 48 29% 94%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 48 29% 94%;
+    --primary: 192 92% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 198 89% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 28 95% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 192 92% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+
+    font-family: Urbanist, sans-serif;
+  }
+}
